@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/svaneti.css">
+</head>
+<body>
+    <h1 class="hottels-sv">სასტუმროები სვანეთში</h1>
+
+   <div class="container"><p class="triped"><i class="bi bi-bag-check-fill"></i></p>
+    <div id="cartItems"></div></div>
+
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+          <button class="close" onclick="closeModal()">&#10006;</button>
+          <h2>დაჯავშნე სასტუმრო</h2>
+          <button id="submitButton">Submit</button>
+        </div>
+      </div>
+    <div class="container">
+    <div class="book">
+        <p>სასტუმრო კოშკი</p>
+        <p class="text-p">მდებარეიბს მესტიაში კერძოდ ცენტრში xxx რესტორნის გვერძე  3 საძნებლით 2 აბაზანით და საერთო სამზარეულოთი გათვლილი 5 კაცზე ფასი 500ლარი</p>
+        <button class="open-modal-button" data-modal-target="#bookingModal">დაჯავშნე სასტუმრო</button>
+        <div class="cover">
+            <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/192988802.jpg?k=5e7a3c13145b8f56e9de1d7f94a13df0b45d6dd62299a717a773ef202f85a3b5&o=" alt="">
+        </div>
+       </div>
+       <div class="book">
+        <p>სასტუმრო ნათება</p>
+        <p class="text-p">მდებარეიბს მესტიაში კერძოდ ცენტრში   5 საძნებლით 3 აბაზანით და საერთო სამზარეულოთი გათვლილი 10 კაცზე ფასი 700ლარი </p>
+        <button id="submitBtn">Submit</button>
+        <div class="cover">
+            <img src="img/sastumro.jpg" alt="">
+        </div>
+       </div>
+       <div class="book">
+        <p>სასტუმრო grand hotel</p>
+        <p class="text-p">მდებარეიბს მესტიაში 10 საძნებლით 4 აბაზანით  გათვლილი 15 კაცზე ფასი 1550 ლარი შედის კვებაც </p>
+        <button id="submitBtn">Submit</button>
+        <div class="cover">
+            <img src="img/სასტუმრო2.png" alt="">
+        </div>
+       </div>
+       <div class="book">
+        <p>სასტუმრო კოშკი</p>
+        <p class="text-p">მდებარეიბს უშგულზე  2 საძნებლით 1 აბაზანით და  გათვლილი 4 კაცზე 550ლარი </p>
+        <button id="submitBtn">Submit</button>
+        <div class="cover">
+            <img src="img/სასტუმრო3.jpg" alt="">
+        </div>
+       </div>
+       <div class="book">
+        <p>სასტუმრო კოშკი</p>
+        <p class="text-p">მდებარეიბს მესტიაში 15 ოთახი 5 აბაზანით და საერთო სამზარეულოთი გათვლილი 20  კაცზე შედის კვებაც</p>
+        <button id="submitBtn">Submit</button>
+        <div class="cover">
+            <img src="img/სასტუმრო4.jpg" alt="">
+        </div>
+       </div>
+       <div class="book">
+        <p>სასტუმრო ვილა</p>
+        <p class="text-p">მდებარეიბს ჰაწვლაზე 3 ვილა გათვლილია წყვილებზე ფასი 1000ლარი კვება თვენი  </p>
+        <button id="submitBtn">Submit</button>
+        <div class="cover">
+            <img src="img/სასტუმრო5.jpg" alt="">
+        </div>
+       </div>
+       <div class="book">
+        <p>ვილა</p>
+        <p class="text-p">მდებარეიბს მესტიაში  1 საძნებლით 1 აბაზანით და  გათვლილი 2 კაცზე ფასი 400ლარი</p>
+        <button id="submitBtn">Submit</button>
+        <div class="cover">
+            <img src="img/სასტუმრო6.jpg" alt="">
+        </div>
+       </div>
+       <div class="book">
+        <p>სასტუმრო ოქროსკოშკი</p>
+        <p class="text-p">მდებარეიბს მესტიაში კერძოდ ცენტრში  5 საძნებლით 2 აბაზანით და  გათვლილი 4 კაცზე ფასი 600ლარი</p>
+        <button id="submitBtn">Submit</button>
+        <div class="cover">
+            <img src="img/სასტუმრო7.jpg" alt="">
+        </div>
+       </div>
+       <div class="book">
+        <p>სასტუმრო elithous</p>
+        <p class="text-p">მდებარეიბს მესტიაში   4 საძნებლით 2 აბაზანით და  გათვლილი 6 კაცზე ფასი 600ლარი კვება თვენი</p>
+        <button id="submitBtn">Submit</button>
+        <div class="cover">
+            <img src="img/სასტუმრო8.jpg" alt="">
+        </div>
+       </div>
+       <div class="book">
+        <p>სასტუმრო rivelslide</p>
+        <p class="text-p">მდებარეიბს მესტიაში   10 საძნებლით 4 აბაზანით და საერთო სამზარეულოთი გათვლილი 5 კაცზე ფასი 750ლარი შედის კვება</p>
+        <button id="submitBtn">Submit</button>
+        <div class="cover">
+            <img src="img/სასტუმრო9.jpg" alt="">
+        </div>
+       </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/sv.js"></script>
+    
+</body>
+</html>

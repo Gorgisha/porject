@@ -1,0 +1,209 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტურები</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/turebi.css">
+</head>
+<body>
+   <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img/mount.png" class="mountain">Travel in georgia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse bg-transparent" id="navbarSupportedContent">
+            <input type="text" id="searchInput" placeholder="Search by name">
+          <ul id="search-results"></ul>
+          <div class="cart">
+           <p class="triped"><i class="bi bi-bag-check-fill"></i></p>
+            <div id="cartItems"></div>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    
+    <div class="modal" id="bookingModal">
+      <div class="modal-content">
+        <button class="close" onclick="closeModal()">&#10006;</button>
+        <h2>Book Your Trip</h2>
+        <input type="text" id="firstNameInput" placeholder="First Name">
+        <input type="text" id="lastNameInput" placeholder="Last Name">
+        <input type="text" id="phoneInput" placeholder="Phone Number">
+        <button id="submitButton">Submit</button>
+      </div>
+    </div>
+    
+    <div id="cardContainer">
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="front">
+              <img src="img/bakuriani.jpg" class="imge" alt="">
+            </div>
+            <div class="back">
+              <p class="p-tag">ბაკურიანი</p>
+              <p>3 დღიანი ტური ბაკურიანში კაცი450gel შედის თხილამურები სასტუმრო კვება ტრანსპორტირება სანახაობები </p>
+              <p>თუ ხართ ჯგუფი გთხოვ წინასწარ გაგვაფრთხილოთ</p> 
+              <button class="noselect open-modal-button" data-modal-target="#bookingModal">Book Your Trip</button>
+            </div>
+          </div>
+        </div>
+     
+    
+
+
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <img src="img/gudauri.jpg" class="imge" alt="">
+        </div>
+        <div class="back">
+          <p class="p-tag">გუდაური</p>
+          <p>
+           1 დღიანი ტური გუდარუღში კაცი 500ლარი შედის თხილამურები საბაგირო სასტუმრო ტრანსპორტირება თუ გსურთ პარაშუტით გადმოხტომა +100ლარი
+          <p>
+            <p>
+              თუ ხართ ჯგუფი გთხოვ წინასწარ გაგვაფრთხილოთ
+            <p> 
+                <button class="noselect open-modal-button" data-modal-target="#bookingModal">Book Your Trip</button>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <img src="img/svaneti-2.jpg" class="imge" alt="">
+        </div>
+        <div class="back">
+          <p class="p-tag">სვანეთი</p>
+          <p>
+            4 დღიანი ტური სვანეთი 750 სასტუმრო მესტიაში სანახაობები ჰაწვალი უშგული ტბები კვება თქვენი.
+          <p>
+            <p>
+              თუ ხართ ჯგუფი გთხოვ წინასწარ გაგვაფრთხილოთ
+            <p> 
+                <button class="noselect open-modal-button" data-modal-target="#bookingModal">Book Your Trip</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <img src="img/tusheti2.jpg" class="imge" alt="">
+        </div>
+        <div class="back">
+          <p class="p-tag">თუშეთი</p>
+          <p>
+           4 დღიანი ტური თუშეთში ფასი 800ლარი  სასტუმრო სანახაობები ტრასპორტირება კვება თქვენი.
+          <p>
+            <p>
+              თუ ხართ ჯგუფი გთხოვ წინასწარ გაგვაფრთხილოთ
+            <p> 
+                <button class="noselect open-modal-button" data-modal-target="#bookingModal">Book Your Trip</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <img src="img/batumi.jpeg" class="imge" alt="">
+        </div>
+        <div class="back">
+          <p class="p-tag">ბათუმი</p>
+          <p>
+            3ღიანი ტური ბათუმშ 400 ლარი სასტუმრო კვება სანახაობები
+          <p>
+            <p>
+              თუ ხართ ჯგუფი გთხოვ წინასწარ გაგვაფრთხილოთ
+            <p> 
+          
+                <button class="noselect open-modal-button" data-modal-target="#bookingModal">Book Your Trip</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <img src="img/კახეტი.jpg" class="imge" alt="">
+        </div>
+        <div class="back">
+          <p class="p-tag">კახეთი</p>
+          <p>
+            1დღანი ტური კახეთში 250 ლარი ვნახავთ ეკლესიებს და საქართველოს უძველეს ნასახლარებს ამავდროულად ვნახავთ შოთა რუსთველის სასწავლებელს
+          <p>
+            <p>
+              თუ ხართ ჯგუფი გთხოვ წინასწარ გაგვაფრთხილოთ
+            <p> 
+            
+                <button class="noselect open-modal-button" data-modal-target="#bookingModal">Book Your Trip</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <img src="img/გორი.jpg" class="imge" alt="">
+        </div>
+        <div class="back">
+          <p class="p-tag">გორი</p>
+          <p>
+            1დღიანი ტური 150ლარი შიდს სტალინის სახლ მუზეუმუ გორის ციხე სალოცავები და დაკარგული ტერიტორიების ნახვა
+          <p>
+            <p>
+              თუ ხართ ჯგუფი გთხოვ წინასწარ გაგვაფრთხილოთ
+            <p> 
+              
+                <button class="noselect open-modal-button" data-modal-target="#bookingModal">Book Your Trip</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <img src="img/სამეგრელო.jpg" class="imge" alt="">
+        </div>
+        <div class="back">
+          <p class="p-tag">სამეგრელო</p>
+          <p>
+            5დღანი ტური სამეგრელოში 1150 ლარი შედის სასტუმრო კვება ნავით გასეირნება მუზეუმები და ვნახავთ კანიონს 
+          <p>
+            <p>
+              თუ ხართ ჯგუფი გთხოვ წინასწარ გაგვაფრთხილოთ
+            <p> 
+             
+                <button class="noselect open-modal-button" data-modal-target="#bookingModal">Book Your Trip</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="front">
+          <img src="img/yazbegi.jpg" class="imge" alt="">
+        </div>
+        <div class="back">
+          <p class="p-tag">ყაზბეგი</p>
+          <p>
+          3დღიანი ტური ყაზბეგში 550ლარი სასტუმრო კვება სანახაობები შედის(მინერალური წყლენი ეკლესიები უძველესი ღირსშესანიშნაობები)
+          <p>
+            <p>
+              თუ ხართ ჯგუფი გთხოვ წინასწარ გაგვაფრთხილოთ
+            <p> 
+              
+                <button class="noselect open-modal-button" data-modal-target="#bookingModal">Book Your Trip</button>
+        </div>
+      </div>
+    </div>
+    
+ 
+    <script src="js/turebi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
